@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-cream: #FFFDF8;
+  --color-paper: #FFFFFF;
+  --color-ink: #1E263B;
+  --color-ink-muted: #525B76;
+  --color-soft-pink: #FFB8C6;
+  --color-blush: #D94E6A;
+  --color-berry: #B83556;
+  --color-lavender: #DED4FA;
+  --color-lilac: #8F75D6;
+  --color-butter: #FFE787;
+  --color-mint: #C8F0DF;
+  --color-emerald-fresh: #1D6B57;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #FFFDF8;
+    color: #1E263B;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Fresh sunlit scrapbook paper canvas with soft pastel garden washes & dots */
+.scrapbook-canvas {
+  background-color: #FFFDF8;
+  background-image:
+    radial-gradient(circle at 12% 10%, rgba(255, 184, 198, 0.22), transparent 36%),
+    radial-gradient(circle at 88% 14%, rgba(200, 240, 223, 0.28), transparent 38%),
+    radial-gradient(circle at 80% 72%, rgba(222, 212, 250, 0.24), transparent 40%),
+    radial-gradient(circle at 18% 82%, rgba(255, 231, 135, 0.22), transparent 36%),
+    radial-gradient(rgba(143, 117, 214, 0.16) 1.1px, transparent 1.1px),
+    radial-gradient(rgba(46, 155, 122, 0.12) 1.1px, transparent 1.1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 15px 15px;
+}
+
+/* Crisp lined stationery paper for the farewell letter */
+.lined-letter-paper {
+  background-color: #FFFFFF;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 31px,
+    rgba(143, 117, 214, 0.2) 31px,
+    rgba(143, 117, 214, 0.2) 32px
+  );
+  background-position: 0 18px;
+}
+
+/* Crisp Polaroid elevation shadows */
+.polaroid-shadow {
+  box-shadow:
+    0 12px 28px -10px rgba(30, 38, 59, 0.14),
+    0 4px 10px -4px rgba(143, 117, 214, 0.1);
+}
+
+.polaroid-shadow-hover {
+  box-shadow:
+    0 22px 38px -12px rgba(30, 38, 59, 0.2),
+    0 8px 18px -6px rgba(217, 78, 106, 0.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

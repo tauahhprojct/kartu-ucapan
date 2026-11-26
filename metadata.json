@@ -1,0 +1,6 @@
+{
+  "name": "A Little Memory, A Lifetime of Stories",
+  "description": "Hadiah digital perpisahan purna tugas berisi lima potret kenangan hangat dan surat terima kasih.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
